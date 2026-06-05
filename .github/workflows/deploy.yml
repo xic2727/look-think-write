@@ -36,3 +36,13 @@ jobs:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./dist
           force_orphan: true
+
+      - name: Output Deployed URL
+        run: |
+          URL="https://${{ github.repository_owner }}.github.io/${{ github.event.repository.name }}/"
+          echo "============================================="
+          echo "🚀 Your app has been built and deployed!"
+          echo "🌐 Live URL: $URL"
+          echo "============================================="
+          echo "### 🚀 Deployed successfully!" >> $GITHUB_STEP_SUMMARY
+          echo "🌐 **Live App URL:** [$URL]($URL)" >> $GITHUB_STEP_SUMMARY
