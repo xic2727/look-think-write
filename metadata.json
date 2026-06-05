@@ -1,0 +1,6 @@
+{
+  "name": "看图写话教学互动教室",
+  "description": "面向小学一年级下学期的看图写话教学互动平台，通过拼装句式、交互式观察、AI 智能温和点评与优秀范文库，全方位培养儿童的观察力、想象力和表达表达能力。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
